@@ -4,10 +4,46 @@ button {
 
 #form-div {
     background-color:white;
-    width:80%;
-    height:100vh;
 }
 
 #sidebar {
-    height:100vh;
+    min-height: 28.4cm;
+    height: 28.4cm;
+}
+
+.print-format {
+        /*216mm or 21.6cm or 8.5in (inches)*/
+        max-width: 21.6cm;
+        width: 21.6cm;
+        /*279mm or 27.9cm or 11.0in (inches)*/
+        min-height: 27.9cm;
+        height: 27.9cm;
+        /* Margin from edge of page (padding) 0.0cm*/
+        padding: 0.0cm;
+        margin: 0.0cm 0.0cm 0.0cm 0.0cm;
+        float: left;
+        background-color: rgba(255,2555,255,1.0);
+        box-shadow: 0px 0px 9px rgba(0,0,0,0.5);
+    }
+    .print-format.landscape {
+        max-width: 27.9cm;
+        width: 27.9cm;
+    }
+    .print-format.portrait {
+        max-width: 21.6cm;
+        width: 21.6cm;
+    }
+
+.ruler-y {
+    min-height: 27.9cm;
+    height: 27.9cm;
+    width:.5cm;
+    background-color:rgb(226, 226, 226);
+}
+
+.ruler-x {
+    max-width: 21.6cm;
+    width: 21.6cm;
+    height:.5cm;
+    background-color:rgb(226, 226, 226);
 }

@@ -14,12 +14,6 @@
 <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 <link href="{% static 'bootstrap/css/mycss.css' %}" rel="stylesheet">
 
-<script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
-<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
-<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-<script src="{% static 'bootstrap/js/myjs.js' %}"></script>
-
 
 
 <body style="background-color:#1d1d1d">
@@ -28,12 +22,12 @@
 
     <div id ="menubar">
         <div class="container d-flex justify-content-between">
-            <div class="col-sm-7 col-lg-7">
+            <!--<div class="col-sm-7 col-lg-7">
                 <h4 class="text-light" style="margin-left:-10px">About</h4>
             </div>
             <div class="col-sm-5 col-md-5 col-lg-5">
                 <h4 class="text-light">Contact</h4>
-            </div>
+            </div> -->
         </div>
     </div>
         
@@ -43,9 +37,9 @@
         <a href="#" class="navbar-brand d-flex align-items-center">
             <strong>Formigator</strong>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button>-->
         </div>
     </div>
     </header>
@@ -53,6 +47,7 @@
     <div class="navbar">
         <div class="container" style="margin-top:0px;">
             <div id = "sidebar" class="col-sm-3 col-lg-3" style="background-color:#444444;">
+
               <h4 class="text-light" style="margin-top:10px">
                 Header:
               </h4>
@@ -66,10 +61,23 @@
                 Export Form
               </button>
 
+              <h4 class="text-light" style="margin-top:10px">
+                Assets:
+              </h4>
+
+              <div></div>
+
             </div>
             <div class="col-sm-9 col-md-9 col-lg-9" style="background-color:#3b3b3b; height:100%;">{%block content%} {% endblock %}</div>
         </div>
     </div>
 
 </body>
+
+<script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/myjs.js' %}"></script>
+
 </html>
